@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Arial', sans-serif;
+    }
+    .background-image {
+        background-image: url('{% static "helloapp/fortemplate.png" %}');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .message-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .message {
+        color: white;
+        font-size: 2em;
+        text-shadow: 2px 2px 4px #000000;
+    }
+</style>
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="message-container">
+    <div class="message">
+        <h1>Hello World</h1>
+        <p>Welcome to my site !.</p>
+    </div>
+</div>
+
+</body>
+</html>
